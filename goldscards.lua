@@ -115,7 +115,7 @@ SMODS.Consumable {
     unlocked = true,
     discovered = true,
     can_use = function(self, card)
-		return abletouseconsumables() and #((G.hand or {}).cards or {}) > 0
+		return #((G.hand or {}).cards or {}) > 0
     end,
     use = function(self, card, area, copier)
         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.4, func = function()
@@ -170,7 +170,7 @@ SMODS.Consumable {
     unlocked = true,
     discovered = true,
     can_use = function(self, card)
-		return abletouseconsumables() and #((G.hand or {}).cards or {}) > 0
+		return #((G.hand or {}).cards or {}) > 0
     end,
     use = function(self, card, area, copier)
         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.4, func = function()
@@ -225,7 +225,7 @@ SMODS.Consumable {
     unlocked = true,
     discovered = true,
     can_use = function(self, card)
-		return abletouseconsumables() and #((G.hand or {}).cards or {}) > 0
+		return #((G.hand or {}).cards or {}) > 0
     end,
     use = function(self, card, area, copier)
         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.4, func = function()
@@ -280,7 +280,7 @@ SMODS.Consumable {
     unlocked = true,
     discovered = true,
     can_use = function(self, card)
-		return abletouseconsumables() and #((G.hand or {}).cards or {}) > 0
+		return #((G.hand or {}).cards or {}) > 0
     end,
     use = function(self, card, area, copier)
         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.4, func = function()
