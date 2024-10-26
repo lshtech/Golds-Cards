@@ -58,13 +58,14 @@ SMODS.Consumable {
     discovered = true,
     can_use = function(self, card)
         if G.hand and (#G.hand.highlighted <= self.config.max_highlighted) and G.hand.highlighted[1] then
-            local condition = true
-            for i = 1, #G.hand.highlighted do
-                if G.hand.highlighted[i].ability.effect ~= "Base" then
-                    condition = false
-                end
-            end
-            if condition then return true end
+            -- local condition = true
+            -- for i = 1, #G.hand.highlighted do
+            --     if G.hand.highlighted[i].ability.effect ~= "Base" then
+            --         condition = false
+            --     end
+            -- end
+            -- if condition then return true end
+            return true
         end
         return false
     end,
